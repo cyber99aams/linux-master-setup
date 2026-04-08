@@ -30,7 +30,7 @@ sudo apt install curl -y
 
 **রিমোট সার্ভারের সাথে নিরাপদভাবে কানেক্ট হওয়া এবং একটি টানেল তৈরি করা যা আপনার লোকাল সার্ভিসকে ইন্টারনেটে ছড়িয়ে দিবে।**
 ```
-wget https://github.com/cyber-aams/Linux-master-setup/releases/download/v3.0/cloudflared-linux-arm64
+wget https://github.com/cyber99aams/linux-master-setup/releases/download/v4.0/cloudflared-linux-arm64
 chmod +x cloudflared-linux-arm64
 sudo mv cloudflared-linux-arm64 /usr/local/bin/cloudflared
 cloudflared --version
