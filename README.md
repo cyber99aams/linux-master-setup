@@ -39,6 +39,7 @@ cloudflared --version
 ```
 sudo apt install openssh-server git -y            sudo mkdir -p /run/sshd
 sudo /usr/sbin/sshd
+
 ```
 Cloudflared দিয়ে লিঙ্ক পাবলিশ করা (নতুন টার্মিনাল সেশনে) 
 
