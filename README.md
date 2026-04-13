@@ -26,20 +26,18 @@ sudo apt install wget -y
 sudo apt install curl -y
 
 ```
-## OpenSSH & Cloudflared (port forwarding) 
+## Port Forwarding (openssh & cloudflared)
 
 **রিমোট সার্ভারের সাথে নিরাপদভাবে কানেক্ট হওয়া এবং একটি টানেল তৈরি করা যা আপনার লোকাল সার্ভিসকে ইন্টারনেটে ছড়িয়ে দিবে।**
+## Linux
 ```
-wget https://github.com/cyber99aams/linux-master-setup/releases/download/v4.0/cloudflared-linux-arm64
-chmod +x cloudflared-linux-arm64
-sudo mv cloudflared-linux-arm64 /usr/local/bin/cloudflared
-cloudflared --version
+apt install wget openssh-server -y && wget https://github.com/cyber99aams/linux-master-setup/releases/download/v4.0/cloudflared-linux-arm64 && chmod +x cloudflared-linux-arm64 && mv cloudflared-linux-arm64 /usr/local/bin/cloudflared && cloudflared --version
+
 
 ```
+## Termux
 ```
-sudo apt install openssh-server git -y            sudo mkdir -p /run/sshd
-sudo /usr/sbin/sshd
-
+wget https://github.com/cyber99aams/linux-master-setup/releases/download/v4.0/cloudflared-linux-arm64 && chmod +x cloudflared-linux-arm64 && mv cloudflared-linux-arm64 $PREFIX/bin/cloudflared && cloudflared --version
 ```
 Cloudflared দিয়ে লিঙ্ক পাবলিশ করা (নতুন টার্মিনাল সেশনে) 
 
