@@ -31,13 +31,15 @@ sudo apt install curl -y
 **রিমোট সার্ভারের সাথে নিরাপদভাবে কানেক্ট হওয়া এবং একটি টানেল তৈরি করা যা আপনার লোকাল সার্ভিসকে ইন্টারনেটে ছড়িয়ে দিবে।**
 ## Linux
 ```
-apt install wget openssh-server -y && wget https://github.com/cyber99aams/linux-master-setup/releases/download/v4.0/cloudflared-linux-arm64 && chmod +x cloudflared-linux-arm64 && mv cloudflared-linux-arm64 /usr/local/bin/cloudflared && cloudflared --version
+apt update && apt install openssh-server -y && wget https://github.com/cyber99aams/linux-master-setup/releases/download/v4.0/cloudflared-linux-arm64 && chmod +x cloudflared-linux-arm64 && mv cloudflared-linux-arm64 /usr/local/bin/cloudflared && cloudflared --version
+
 
 
 ```
 ## Termux
 ```
-wget https://github.com/cyber99aams/linux-master-setup/releases/download/v4.0/cloudflared-linux-arm64 && chmod +x cloudflared-linux-arm64 && mv cloudflared-linux-arm64 $PREFIX/bin/cloudflared && cloudflared --version
+pkg install openssh -y && wget https://github.com/cyber99aams/linux-master-setup/releases/download/v4.0/cloudflared-linux-arm64 && chmod +x cloudflared-linux-arm64 && mv cloudflared-linux-arm64 $PREFIX/bin/cloudflared && cloudflared --version
+
 ```
 Cloudflared দিয়ে লিঙ্ক পাবলিশ করা (নতুন টার্মিনাল সেশনে) 
 
