@@ -2,6 +2,10 @@
 ```
 echo "nameserver 8.8.8.8" > /etc/resolv.conf
 ```
+```
+apt update --allow-releaseinfo-change
+
+```
 # 📋 Tools Description 
 ## Git
 
