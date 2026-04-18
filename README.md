@@ -253,9 +253,15 @@ shodan init আপনার_API_KEY
 
 ```
 
+## Searchsploit (Exploit Database)
+​এর কাজ হলো বিভিন্ন সফটওয়্যার বা সার্ভিসের দুর্বলতা (Vulnerabilities) খুঁজে বের করা।
+```
+sudo apt install exploitdb -y
 
+```
+**ব্যবহার:** ধরুন একটি সার্ভারে Apache 2.4.41 চলছে। Searchsploit-এ গিয়ে সার্চ করলে এটি বলে দেবে এই ভার্সনের জন্য ইন্টারনেটে কোনো তৈরি করা হ্যাকিং স্ক্রিপ্ট বা এক্সপ্লয়েট আছে কি না।
 
-
+**সার্চ করার নিয়ম:** `searchsploit apache 2.4`
 
 
 
