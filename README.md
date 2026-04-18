@@ -7,6 +7,11 @@ apt update --allow-releaseinfo-change
 
 ```
 # 📋 Tools Description 
+
+
+# Basic Tools
+</hr>
+
 ## Git
 
 **GitHub থেকে বিভিন্ন টুল এবং স্ক্রিপ্ট ক্লোন (ডাউনলোড) করার জন্য এটি অপরিহার্য।**
@@ -30,24 +35,7 @@ sudo apt install wget -y
 sudo apt install curl -y
 
 ```
-## Port Forwarding (openssh & cloudflared)
 
-**রিমোট সার্ভারের সাথে নিরাপদভাবে কানেক্ট হওয়া এবং একটি টানেল তৈরি করা যা আপনার লোকাল সার্ভিসকে ইন্টারনেটে ছড়িয়ে দিবে।**
-## Linux
-```
-apt install openssh-server -y && wget https://github.com/cyber99aams/linux-master-setup/releases/download/v4.0/cloudflared-linux-arm64 && chmod +x cloudflared-linux-arm64 && mv cloudflared-linux-arm64 /usr/local/bin/cloudflared && cloudflared --version
-
-
-
-```
-## Termux
-```
-pkg install openssh -y && wget https://github.com/cyber99aams/linux-master-setup/releases/download/v4.0/cloudflared-linux-arm64 && chmod +x cloudflared-linux-arm64 && mv cloudflared-linux-arm64 $PREFIX/bin/cloudflared && cloudflared --version
-
-```
-Cloudflared দিয়ে লিঙ্ক পাবলিশ করা (নতুন টার্মিনাল সেশনে) 
-
-`cloudflared tunnel --url http://localhost:8080`
 
 
 
@@ -59,6 +47,9 @@ Cloudflared দিয়ে লিঙ্ক পাবলিশ করা (নতু
 sudo apt install php php-common php-cli php-curl php-gd php-mysql -y
 
 ```
+
+
+
 ## nano 
 
 **টার্মিনালের ভেতরে সরাসরি ফাইল এডিট করা বা নতুন স্ক্রিপ্ট লেখার জন্য একটি সহজ টেক্সট এডিটর।**
@@ -80,6 +71,19 @@ sudo apt install nodejs npm -y
 sudo apt install coreutils -y
 
 ```
+
+## One Line Command Of Basic Tools
+```
+sudo apt install clang gdb coreutils nodejs npm nano php php-common php-cli php-curl php-gd php-mysql curl git wget -y
+
+```
+
+
+
+
+
+
+
 ## Ruby
 **এটি একটি ডাইনামিক প্রোগ্রামিং ল্যাঙ্গুয়েজ, যা Metasploit-এর মতো বিভিন্ন সিকিউরিটি ফ্রেমওয়ার্ক চালানোর জন্য প্রয়োজন।**
 
@@ -98,6 +102,29 @@ sudo gem install bundler
 আপনি যদি কোনো নির্দিষ্ট Ruby স্ক্রিপ্ট (.rb ফাইল) চালাতে চান, তবে কমান্ডটি হবে:
 
 `ruby [ফাইলের_নাম].rb`
+
+
+
+## Port Forwarding (openssh & cloudflared)
+
+**রিমোট সার্ভারের সাথে নিরাপদভাবে কানেক্ট হওয়া এবং একটি টানেল তৈরি করা যা আপনার লোকাল সার্ভিসকে ইন্টারনেটে ছড়িয়ে দিবে।**
+## Linux
+```
+apt install openssh-server -y && wget https://github.com/cyber99aams/linux-master-setup/releases/download/v4.0/cloudflared-linux-arm64 && chmod +x cloudflared-linux-arm64 && mv cloudflared-linux-arm64 /usr/local/bin/cloudflared && cloudflared --version
+
+
+
+```
+## Termux
+```
+pkg install openssh -y && wget https://github.com/cyber99aams/linux-master-setup/releases/download/v4.0/cloudflared-linux-arm64 && chmod +x cloudflared-linux-arm64 && mv cloudflared-linux-arm64 $PREFIX/bin/cloudflared && cloudflared --version
+
+```
+Cloudflared দিয়ে লিঙ্ক পাবলিশ করা (নতুন টার্মিনাল সেশনে) 
+
+`cloudflared tunnel --url http://localhost:8080`
+
+
 
 ## Python
 
