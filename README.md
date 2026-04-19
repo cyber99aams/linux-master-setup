@@ -1,4 +1,4 @@
-**সবকিছু সঠিকভাবে করার জন্য আগে server ঠিক করে নিন:**
+**সব কাজ সঠিকভাবে করার জন্য আগে server ঠিক করে নিন:**
 ```
 echo "nameserver 8.8.8.8" > /etc/resolv.conf
 ```
@@ -6,82 +6,48 @@ echo "nameserver 8.8.8.8" > /etc/resolv.conf
 apt update --allow-releaseinfo-change
 
 ```
+ 
+
+
+
+**Basic Tools Install**
+
+
+
+```
+sudo apt install coreutils npm php php-common php-cli php-curl php-gd php-mysql curl git wget -y
+
+```
+
 # 📋 Tools Description 
+<hr>
+</br>
+</br>
 
+## Coding & Programing
 
-# Basic Tools
-</hr>
+**Termux এ html, css, c programing, c++, java, javascript রান করতে প্রয়োজন।**
 
-## Git
-
-**GitHub থেকে বিভিন্ন টুল এবং স্ক্রিপ্ট ক্লোন (ডাউনলোড) করার জন্য এটি অপরিহার্য।**
-```
-sudo apt install git -y
 
 ```
-ব্যবহার: কোনো রিপোজিটরি ক্লোন করতে লিখুন: git clone [লিঙ্ক]
-## Wget
-
-**ইন্টারনেট থেকে যেকোনো ফাইল সরাসরি টার্মিনালে ডাউনলোড করার জন্য একটি জনপ্রিয় কমান্ড-লাইন টুল**
-```
-sudo apt install wget -y
-
-```
-ব্যবহার: কোনো ফাইল ডাউনলোড করতে লিখুন: wget [ডাওনলোড লিঙ্ক]
-## Curl 
-
-**বিভিন্ন প্রোটোকল (যেমন HTTP, FTP) ব্যবহার করে ডাটা ট্রান্সফার এবং API টেস্টিং করার জন্য এটি ব্যবহৃত হয়।**
-```
-sudo apt install curl -y
+sudo apt install build-essential clang nodejs default-jdk nano -y
 
 ```
 
+**(C)রান:** `gcc file.c -o file` লিখে এন্টার দিন, তারপর `./file` দিয়ে রান করুন।
 
 
+**(C++)রান:** `g++ file.cpp -o file` লিখে এন্টার দিন, তারপর `./file` দিয়ে রান করুন।
 
-## php 
+**(javascript)রান:** সরাসরি `node file.js` লিখে এন্টার দিন।
 
-**লোকাল হোস্ট সার্ভার তৈরি করা এবং সার্ভার-সাইড স্ক্রিপ্টিং প্রজেক্টের জন্য এটি ব্যবহার করা হয়।**
+**(java)রান:** `javac Main.java` দিয়ে কম্পাইল করে `java Main` লিখে রান করুন।
 
-```
-sudo apt install php php-common php-cli php-curl php-gd php-mysql -y
-
-```
+**(html/css)রান:** প্রথমে আপনার ফাইলটি যে ফোল্ডারে আছে, সেখানে পাইথন সার্ভারটি চালু করুন `python3 -m http.server 8000` এবার ব্রাউজারে `http://localhost:8000` লিখে সার্চ করুন।(python3 install থাকতে হবে)
 
 
-
-## nano 
-
-**টার্মিনালের ভেতরে সরাসরি ফাইল এডিট করা বা নতুন স্ক্রিপ্ট লেখার জন্য একটি সহজ টেক্সট এডিটর।**
-```
-sudo apt install nano -y
-
-```
-## nodejs 
-
-**জাভাস্ক্রিপ্ট রানটাইম এনভায়রনমেন্ট, যা বিভিন্ন আধুনিক ওয়েব টুলস এবং সার্ভার অ্যাপ্লিকেশন চালাতে সাহায্য করে।**
-```
-sudo apt install nodejs npm -y
-
-```
-## coreutils 
-
-**ফাইল ম্যানেজমেন্ট এবং টেক্সট প্রসেসিং করার জন্য প্রয়োজনীয় মৌলিক লিনাক্স কমান্ডগুলোর (যেমন: ls, cp, mv) সমষ্টি।** 
-```
-sudo apt install coreutils -y
-
-```
-
-## One Line Command Of Basic Tools
-```
-sudo apt install clang gdb coreutils nodejs npm nano php php-common php-cli php-curl php-gd php-mysql curl git wget -y
-
-```
-
-
-
-
-
+</br>
+</br>
 
 
 ## Ruby
@@ -103,6 +69,8 @@ sudo gem install bundler
 
 `ruby [ফাইলের_নাম].rb`
 
+</br>
+</br>
 
 
 ## Port Forwarding (openssh & cloudflared)
@@ -124,6 +92,8 @@ Cloudflared দিয়ে লিঙ্ক পাবলিশ করা (নতু
 
 `cloudflared tunnel --url http://localhost:8080`
 
+</br>
+</br>
 
 
 ## Python
@@ -156,7 +126,8 @@ pip3 install requests colorama bs4 scapy --break-system-packages
 
 
 
-
+</br>
+</br>
 
 
 
@@ -216,7 +187,8 @@ pip3 install holehe
 
 
 
-
+</br>
+</br>
 
 
 
@@ -268,7 +240,8 @@ sudo apt install exploitdb -y
 
 
 
-
+</br>
+</br>
 
 
 
@@ -305,7 +278,8 @@ sudo apt install wireshark -y
 
 
 
-
+</br>
+</br>
 
 
 
@@ -362,7 +336,8 @@ sudo apt install ophcrack -y
 
 
 
-
+</br>
+</br>
 
 
 
@@ -408,7 +383,8 @@ msfconsole
 
 
 
-
+</br>
+</br>
 
 
 
