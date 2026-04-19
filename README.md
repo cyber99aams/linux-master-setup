@@ -307,6 +307,14 @@ cd thc-hydra
 ./configure
 
 ```
+```
+make
+
+```
+```
+make install
+
+```
 
 ## Aircrack-ng
 
