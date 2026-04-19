@@ -324,9 +324,16 @@ sudo apt install john -y
 
 **একটি অত্যন্ত শক্তিশালী লগইন ব্রুট-ফোর্স (Brute-force) টুল। যা বিভিন্ন ধরনের পাসওয়ার্ড ক্রেকিং এর জন্য ব্যবহৃত হয়**
 ```
-sudo apt install hydra -y
+sudo apt install build-essential make cmake libcurl openssl -y
 
 ```
+```
+git clone https://github.com/cyber99aams/thc-hydra.git
+cd thc-hydra
+./configure
+
+```
+
 ## Aircrack-ng
 
 **আশেপাশের কোনো লক করা ওয়াইফাই নেটওয়ার্কের ডাটা প্যাকেট ক্যাপচার করে সেটির পাসওয়ার্ড ডিক্রিপ্ট করা সম্ভব**
