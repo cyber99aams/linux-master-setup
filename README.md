@@ -298,7 +298,7 @@ sudo apt install john -y
 
 **একটি অত্যন্ত শক্তিশালী লগইন ব্রুট-ফোর্স (Brute-force) টুল। যা বিভিন্ন ধরনের পাসওয়ার্ড ক্রেকিং এর জন্য ব্যবহৃত হয়**
 ```
-sudo apt install build-essential make cmake libcurl openssl -y
+sudo apt install build-essential make cmake libcurl4-openssl-dev libssl-dev -y
 
 ```
 ```
