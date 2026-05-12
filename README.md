@@ -28,6 +28,11 @@ sudo apt install coreutils npm php php-common php-cli php-curl php-gd php-mysql 
 
 **Termux এ html, css, c programing, c++, java, javascript রান করতে প্রয়োজন।**
 
+```
+pkg update && pkg upgrade -y && pkg install build-essential clang python nodejs openjdk-17 nano -y
+
+```
+**kali linux এ html, css, c programing, c++, java, javascript রান করতে প্রয়োজন।**
 
 ```
 sudo apt install build-essential clang nodejs default-jdk nano -y
